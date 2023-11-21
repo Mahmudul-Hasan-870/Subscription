@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubscriptionActivity">
+
+    <RelativeLayout
+        android:id="@+id/header_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/surah_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:letterSpacing="0.03"
+            android:lineSpacingExtra="5dp"
+            android:text="GO Premium"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tvSubstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_card"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:letterSpacing="0.03"
+        android:lineSpacingExtra="5dp"
+        android:text="Loading"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:id="@+id/remove_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSubstatus"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove Ads"
+            android:letterSpacing="0.03"
+            android:lineSpacingExtra="5dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@id/remove_ad"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview"/>
+
+</RelativeLayout>
